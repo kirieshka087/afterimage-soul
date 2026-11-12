@@ -1,0 +1,1 @@
+{"private":true,"type":"module","scripts":{"start":"node serve.cjs","models":"node source/export.mjs","test":"node --test source/motion.test.mjs"},"dependencies":{"three":"0.180.0"}}

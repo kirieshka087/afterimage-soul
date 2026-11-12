@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {inertialStep,flickVelocity} from './motion.mjs';
+const simulate=(hz)=>{let v=7,angle=0;for(let i=0;i<hz*3;i++){let s=inertialStep(v,1/hz);v=s.speed;angle+=s.angle;}return {v,angle};};
+const a=simulate(30),b=simulate(144);
+assert.ok(Math.abs(a.angle-b.angle)<1e-10,'Frame-rate independent inertia');
+assert.ok(a.v>0&&a.v<.06,'A flick continues then slows');
+assert.ok(flickVelocity(80,.05)>flickVelocity(80,.4),'Fast gestures impart more momentum');
+assert.equal(inertialStep(0,.016).angle,0);
+assert.equal(flickVelocity(10000,.001),9);
+console.log('Inertia checks passed: frame rate, decay, gesture speed, zero velocity, velocity cap');

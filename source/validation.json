@@ -1,0 +1,22 @@
+[
+  {
+    "model": "proximity",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "model": "voice",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "model": "memory",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "model": "sun",
+    "errors": 0,
+    "warnings": 0
+  }
+]

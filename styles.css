@@ -47,3 +47,4 @@ body:before{content:'';position:fixed;inset:0;z-index:-2;pointer-events:none;bac
 /* Fade the scene into the same continuous backdrop used by the next section */
 .hero{background:transparent}.hero .scene{mask-image:linear-gradient(to bottom,#000 88%,transparent 100%)}.hero-fade,.hero:after{display:none}
 @media(max-width:700px){.hero .scene{mask-image:linear-gradient(to bottom,#000 93%,transparent 100%)}}
+html{color-scheme:dark}.motion-paused .space-comet,.motion-paused .hero-comet{animation-play-state:paused}@media(max-width:700px){html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}}

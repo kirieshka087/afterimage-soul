@@ -48,3 +48,8 @@ body:before{content:'';position:fixed;inset:0;z-index:-2;pointer-events:none;bac
 .hero{background:transparent}.hero .scene{mask-image:linear-gradient(to bottom,#000 88%,transparent 100%)}.hero-fade,.hero:after{display:none}
 @media(max-width:700px){.hero .scene{mask-image:linear-gradient(to bottom,#000 93%,transparent 100%)}}
 html{color-scheme:dark}.motion-paused .space-comet,.motion-paused .hero-comet{animation-play-state:paused}@media(max-width:700px){html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}}
+
+/* v7: photographic detail, square windows, a double heartbeat */
+.dark-body-layer{display:none!important}.card{border-radius:28px}.card-label{left:10%;right:auto;text-align:left}.card h3{left:10%;right:10%;bottom:12%;text-align:left}.card h3 button{text-align:left}.research-open{display:block;left:auto;right:8%;top:8%;bottom:auto;width:auto;padding:10px 13px}.rhythm-orb i{animation:heart-beat var(--rhythm-duration,1.5s) ease-in-out infinite;animation-direction:normal!important;animation-delay:0s!important;translate:0 0;rotate:0deg;scale:1}.rhythm-orb i:nth-child(2){animation-delay:.035s!important}.rhythm-orb i:nth-child(3){animation-delay:.065s!important}@keyframes heart-beat{0%,25%,52%,100%{scale:1}12%{scale:var(--rhythm-amount,1.05)}37%{scale:calc(1 + (var(--rhythm-amount,1.05) - 1) * .65)}}@media(max-width:700px){.research-open{display:block;font-size:9px}.card h3{bottom:12%;font-size:20px}}@media(prefers-reduced-motion:reduce){.rhythm-orb i{animation:none}}
+
+.trace-touch-hint{display:none}@media(pointer:coarse){.trace-desktop-hint{display:none}.trace-touch-hint{display:inline}}

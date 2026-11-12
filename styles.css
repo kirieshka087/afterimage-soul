@@ -15,3 +15,4 @@ header,.intro,.path,.path li,.final,footer,nav{border:0}header{top:36px;left:4.4
 html:not(.is-loading) .preloader{opacity:0;visibility:hidden;pointer-events:none}
 @media(min-width:701px){.hero-fade{inset:85% 0 0;background:linear-gradient(transparent,#050916 98%)}}
 .scene .white-echo{height:100%;object-fit:cover;object-position:top}
+.scene .white-echo{clip-path:none;mask-image:radial-gradient(ellipse 10% 31% at 52% 55%,#000 30%,transparent 78%);filter:blur(8px) brightness(1.35)}
